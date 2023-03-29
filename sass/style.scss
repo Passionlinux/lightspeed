@@ -1,14 +1,34 @@
+/* Colors: https://github.com/dracula/dracula-theme/blob/master/README.md */
+
+$background: #22202d;
+$current_line: #44475a;
+$selection: #44475a;
+$foreground: #f8f8f2;
+
+$comment: #6272a4;
+$cyan: #8be9fd;
+$green: #50fa7b;
+$orange: #ffb86c;
+$pink: #ff79c6;
+$purple: #bd93f9;
+$red: #ff5555;
+$yellow: #f1fa8c;
+
+$font: ubuntu, sans-serif;
+$font-mono:  ubuntu-mono, monospace;
+$padding: 8px;
+
 html,
 body {
-	background: #fffaf7;
-	color: #2d2d2d;
-	font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+	background: #22202d;
+	color: #f8f8f2;
+	font: 16px/1.5 ubuntu, ubuntu-mono, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol";
 }
 a,
 a:visited {
-	color: darkred;
+	color: #8be9fd;
 	text-decoration: none;
 }
 a:hover {
@@ -16,16 +36,89 @@ a:hover {
 }
 main {
 	margin: auto;
-	max-width: 38rem;
+	max-width: 80rem;
 	padding: 0.8rem;
 }
+
+b, strong {
+    color: $pink;
+}
+
+h1 {
+    color: $purple;
+    font-size: 24px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+h2 {
+    color: $purple;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    color: $purple;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 pre {
-	background: white;
-	overflow: scroll;
+	background: #282a36;
 	padding: 1rem;
+    margin: 1em;
+    overflow-x: auto;
+}
+blockquote  {
+    background-color:#44475a;
+    border-left: solid #50fa7b 0.2em;
+    border-right: solid #50fa7b 0.2em;
+    border-radius: 0.5em;
+    margin: 2em 0;
+    padding: 2em;
+    color: var(--color-gray-20);
+    font-weight: bold;
+    font-style: italic;
+}
+blockquote p {
+    margin: 0;
+}
+
+li code {
+    color: $green !important;
+    font-weight: bold;
+    background: #282a36;
+}
+code {
+    font: 16px ubuntu-mono;
+}
+
+code span {
+    text-decoration: none !important;
+}
+
+p > code {
+    font-weight: bold;
+    color: $green;
+    background: #282a36;
 }
 td {
-	border: 1px solid #2d2d2d;
+	border: 1px solid #6272a4;
 	padding: 10px;
 }
 img {
@@ -43,7 +136,41 @@ img {
 	justify-content: space-between;
 	margin-bottom: 10px;
 }
-@media (max-width: 38rem) {
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.date {
+    color: $comment;
+    font-size: 14px;
+}
+
+.border {
+    color: $comment;
+    margin: 8px 0 8px 0;
+    border-top: 2px dashed;
+}
+
+.notfound {
+    text-align: center;
+}
+
+.icon {
+    color: $comment;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 860px;
+}
+
+@media (max-width: 50rem) {
 	.homepage-list li a {
 		width: 100%;
 	}
