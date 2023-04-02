@@ -1,4 +1,4 @@
-# Light Speed
+# Light Speed with Dracula's color.
 
 An insanely fast and performance-based Zola theme, ported from [Light Speed Jekyll](https://github.com/bradleytaunt/lightspeed).
 
